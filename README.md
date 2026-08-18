@@ -28,8 +28,10 @@
 
 <div align="center">
 
-          🚨 AUTHORIZED USE ONLY 🚨
+  🚨 AUTHORIZED USE ONLY 🚨
+  
 ></div>
+
 
  🚨I have performed these activities only on systems and devices where I had secured written permission or on devices and systems that I own myself.
 >
