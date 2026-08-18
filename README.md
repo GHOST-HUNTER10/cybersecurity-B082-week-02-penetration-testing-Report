@@ -35,18 +35,23 @@
 >  🚨In many countries, **unauthorized access to computer systems is a crime, even when no damage is caused.**
 
 
+
 ---
+
 
 <div align="center">
 
 #  Project Overview
+
 **Footprinting & Scanning Phases of Penetration Testing**
 
 -WHOIS, WhatWeb, Nslookup, Curl, WAFW00F, DNSRecon *(Footprinting)*
 
--Windows ipconfig, Zenmap host discovery, Zenmap topology *(Scanning)*
+-Zenmap host discovery, Zenmap topology *(Scanning)*
 
 </div>
+
+---
 
 
 
@@ -58,10 +63,7 @@
 
 </div>
 
-
-
-
-
+---
 
 **Important:** Reconnaissance and discovery results are observations. They should not be represented as confirmed vulnerabilities unless additional authorized validation establishes exploitability.
 
@@ -144,6 +146,7 @@ The assessment follows a reconnaissance-to-discovery workflow:
 
 ### Phase 1 — Footprinting & Reconnaissance
 
+
 | Activity | Tool |
 |---|---|
 | Domain information | WHOIS |
@@ -153,16 +156,17 @@ The assessment follows a reconnaissance-to-discovery workflow:
 | WAF identification | wafw00f |
 | DNS enumeration | DNSRecon |
 
+
 ### Phase 2 — Network Discovery
 
 | Activity | Tool |
 |---|---|
-| Local configuration | Windows `ipconfig` |
 | Host discovery | Zenmap / Nmap |
 | Host inventory | Zenmap |
 | Topology | Zenmap |
 
 ---
+
 
 ##  Tools & Technologies
 
@@ -176,7 +180,6 @@ The assessment follows a reconnaissance-to-discovery workflow:
 | **wafw00f** | WAF identification |
 | **DNSRecon** | DNS record enumeration |
 | **Zenmap / Nmap** | Network discovery and scanning |
-| **Windows ipconfig** | Local IP and subnet identification |
 
 ---
 
@@ -196,13 +199,12 @@ whois [authorized-domain]
 
 ### Evidence
 
-![WHOIS Evidence](EVIDENCE/01-whois.png)
-
-> Replace the image with your actual screenshot.
+![WHOIS Evidence](EVIDENCE/whois.jpeg)
 
 ### Observation
 
-`[Describe exactly what your WHOIS screenshot shows.]`
+Domain registered with GoDaddy, created on 2019‑11‑06, expires 2027‑11‑06. Name servers: NS6135.HOSTGATOR.COM and NS6136.HOSTGATOR.COM.
+Security Relevance: Reveals registrar, hosting provider, and infrastructure metadata useful for external profiling.
 
 ### Security Relevance
 
@@ -224,11 +226,11 @@ whatweb [authorized-domain]
 
 ### Evidence
 
-![WhatWeb Evidence](EVIDENCE/02-whatweb.png)
+![WhatWeb Evidence](EVIDENCE/whatweb.jpeg)
 
 ### Observation
 
-`[Describe the actual technologies identified in your screenshot.]`
+Apache server, WordPress 7.0.4, WordPress Download Manager 3.3.58, JQuery 3.7.1, Bootstrap 7.0.4, Google Tag Manager, Email contact info@networkwalks.com.
 
 ### Security Relevance
 
@@ -250,16 +252,17 @@ nslookup [authorized-domain]
 
 ### Evidence
 
-![nslookup Evidence](EVIDENCE/03-nslookup.png)
+![nslookup Evidence](EVIDENCE/nslookup.jpeg)
 
 ### Observation
 
-`[Insert the actual IP address, aliases or DNS information shown by your evidence.]`
+Domain resolves to IP 192.232.216.
+
 
 ### Security Relevance
 
-DNS information contributes to infrastructure mapping and can identify the network location of externally accessible services.
-
+Identifies the server’s network location for scanning and mapping.
+ 
 ---
 
 ## 4. HTTP Header Analysis — cURL
@@ -276,11 +279,11 @@ curl -I https://[authorized-domain]
 
 ### Evidence
 
-![cURL Evidence](EVIDENCE/04-curl-headers.png)
+![cURL Evidence](EVIDENCE/curl-y.jpeg)
 
 ### Observation
 
-`[Describe the actual headers, redirects or exposed information visible in the screenshot.]`
+ Status HTTP/2 200, exposed endpoint /wp-json/, cookie __wpdm_client, Apache server banner, referrer policy no-referrer-when-downgrade.
 
 ### Security Relevance
 
@@ -302,11 +305,11 @@ wafw00f https://[authorized-domain]
 
 ### Evidence
 
-![WAFW00F Evidence](EVIDENCE/05-wafw00f.png)
+![WAFW00F Evidence](EVIDENCE/wafw00f.jpeg)
 
 ### Observation
 
-`[Insert the actual WAF detection result.]`
+ Site protected by ModSecurity (SpiderLabs) WAF.
 
 ### Security Relevance
 
@@ -328,11 +331,19 @@ dnsrecon -d [authorized-domain]
 
 ### Evidence
 
-![DNSRecon Evidence](EVIDENCE/06-dnsrecon.png)
+![DNSRecon Evidence](EVIDENCE/dnsrecon.jpeg)
 
 ### Observation
 
-`[Describe the NS, MX, TXT/SPF, SRV or other records actually returned.]`
+SOA: ns6135.hostgator.com (50.87.144.87)
+
+NS: ns6135.hostgator.com (192.232.216.131)
+
+MX: mail.networkwalks.com (192.232.216.135)
+
+TXT: Google site verification + SPF record
+
+SRV: autodiscover records pointing to cpanel discovery servers
 
 ### Security Relevance
 
@@ -340,35 +351,9 @@ DNS records can provide useful information about name servers, mail infrastructu
 
 ---
 
-# Phase 2 — Network Scanning & Discovery
-
-## 7. Local Network Configuration
-
-### Purpose
-
-Identify the local IPv4 address, subnet mask and gateway before performing authorized network discovery.
-
-### Command
-
-```cmd
-ipconfig
-```
-
-### Evidence
-
-![ipconfig Evidence](EVIDENCE/07-ipconfig.png)
-
-### Observation
-
-`[Insert your actual IPv4 address, subnet and gateway information.]`
-
-### Security Relevance
-
-The local configuration establishes the network range that should be used for the authorized discovery exercise.
-
 ---
 
-## 8. Zenmap Host Discovery
+## 7. Zenmap Host Discovery
 
 ### Purpose
 
@@ -385,11 +370,11 @@ Zenmap
 
 ### Evidence
 
-![Zenmap Evidence](EVIDENCE/08-zenmap-scan.png)
+![Zenmap Evidence](EVIDENCE/zenmap.jpeg)
 
 ### Observation
 
-`[Describe the actual hosts discovered by your scan.]`
+3 hosts up: 10.0.0.1, 10.0.0.2, 10.0.0.4.
 
 ### Security Relevance
 
@@ -397,29 +382,29 @@ Host discovery provides visibility into active devices and can help identify une
 
 ---
 
-## 9. Host Inventory
+## 8. Host Inventory
 
 Populate this table from your actual Zenmap evidence.
 
 | Host | IP Address | MAC Address | Observation |
 |---|---|---|---|
-| 01 | `[actual result]` | `[actual result]` | `[device/note]` |
-| 02 | `[actual result]` | `[actual result]` | `[device/note]` |
-| 03 | `[actual result]` | `[actual result]` | `[device/note]` |
-| 04 | `[actual result]` | `[actual result]` | `[device/note]` |
-| 05 | `[actual result]` | `[actual result]` | `[device/note]` |
+| 01 | `10.0.0.1` | `[52:54:00:12:35:80 (QEMU)]` | Gateway / Router
+| 02 | `[10.0.0.2]` | `[08:00:27:C8:86:A2 (VirtualBox)]` | Virtual Machine
+| 03 | `[10.0.0.4]` | `[08:04:A2 (VirtualBox)]` | Virtual Machine
+| 04 | `[10.0.0.5]` | `[Localhost]` | Tester workstation
+| 05 | `[192.232.216.135]` | `[HostGator,(Apache Server) ]` |External authorized target
 
 ---
 
-## 10. Network Topology
+## 9. Network Topology
 
 ### Evidence
 
-![Zenmap Topology](EVIDENCE/09-zenmap-topology.png)
+![Zenmap Topology](EVIDENCE/topology.jpeg)
 
 ### Observation
 
-`[Explain the topology generated from your actual scan.]`
+ Topology shows interconnected hosts: localhost, 10.0.0.1, 10.0.0.2, 10.0.0.4.
 
 ### Security Relevance
 
@@ -433,12 +418,12 @@ A network topology helps communicate discovered relationships and provides a vis
 
 | ID | Finding | Evidence / Observation | Risk | Recommendation |
 |---|---|---|---|---|
-| **F-01** | Web technology information exposed | `[Actual evidence]` | Medium | Review public technology disclosure and maintain software |
-| **F-02** | Server/IP information identifiable | `[Actual evidence]` | Low | Review externally exposed infrastructure information |
-| **F-03** | HTTP technical information exposed | `[Actual evidence]` | Low | Minimize unnecessary technical disclosure |
-| **F-04** | WAF technology identifiable | `[Actual evidence]` | Low | Maintain and monitor the WAF |
-| **F-05** | DNS infrastructure information exposed | `[Actual evidence]` | Medium | Audit public DNS records |
-| **F-06** | Multiple live hosts visible on authorized LAN | `[Actual evidence]` | Medium | Maintain asset inventory and investigate unknown devices |
+| **F-01** | Web technology information exposed | `[WhatWeb identified Apache server, WordPress 7.0.4, WP Download Manager 3.3.58, JQuery 3.7.1, Bootstrap 7.0.4 ]` | Medium | Review public technology disclosure and maintain software |
+| **F-02** | Server/IP information identifiable | `[Nslookup resolved domain networkwalks.com → 192.232.216.135 ]` | Low | Review externally exposed infrastructure information |
+| **F-03** | HTTP technical information exposed | `[Curl headers showed /wp-json/ endpoint, Apache banner, cookie __wpdm_client, referrer policy ]` | Low | Minimize unnecessary technical disclosure |
+| **F-04** | WAF technology identifiable | `[WAFW00F detected ModSecurity (SpiderLabs) protecting the site ]` | Low | Maintain and monitor the WAF |
+| **F-05** | DNS infrastructure information exposed | `[DNSRecon enumerated SOA, NS, MX, TXT (SPF + Google verification), SRV autodiscover records ]` | Medium | Audit public DNS records |
+| **F-06** | Multiple live hosts visible on authorized LAN | `[Zenmap scan discovered 10.0.0.1 (QEMU NIC), 10.0.0.2 (VirtualBox NIC), 10.0.0.4 (VirtualBox NIC), 10.0.0.5 (localhost) ]` | Medium | Maintain asset inventory and investigate unknown devices |
 
 ### Risk Rating
 
