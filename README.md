@@ -1,3 +1,4 @@
+
 <div align="center">
 
 <h1>  Cybersecurity Penetration Testing Report </h1>
@@ -279,7 +280,7 @@ curl -I https://[authorized-domain]
 
 ### Evidence
 
-![cURL Evidence](EVIDENCE/curl-y.jpeg)
+![curl Evidence](EVIDENCE/curl.jpeg)
 
 ### Observation
 
@@ -305,7 +306,7 @@ wafw00f https://[authorized-domain]
 
 ### Evidence
 
-![WAFW00F Evidence](EVIDENCE/wafw00f.jpeg)
+![waf Evidence](EVIDENCE/waf.jpeg)
 
 ### Observation
 
