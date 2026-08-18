@@ -3,6 +3,13 @@
 
 <h1>  Cybersecurity Penetration Testing Report </h1>
 
+### 🔴 Authorized Educational Security Assessment  
+
+ **Pentester:**  Kovilen Sookalingum  
+ **Date:**  August 2026  
+ **Program / Batch:**  B082 – Networkwalks  
+ **GitHub:**  [Your GitHub Profile]  
+
 </div>
 
 ---
