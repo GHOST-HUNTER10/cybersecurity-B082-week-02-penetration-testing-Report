@@ -107,6 +107,7 @@ All activities must remain inside the documented scope.
 The assessment follows a reconnaissance-to-discovery workflow:
 
 ```text
+
                     ┌─────────────────────┐
                     │  Authorized Scope   │
                     └──────────┬──────────┘
@@ -143,6 +144,8 @@ The assessment follows a reconnaissance-to-discovery workflow:
                     │ Risk Analysis &     │
                     │ Recommendations     │
                     └─────────────────────┘
+
+
 ```
 
 ### Phase 1 — Footprinting & Reconnaissance
@@ -440,41 +443,62 @@ A network topology helps communicate discovered relationships and provides a vis
 
 # 🛠️ Recommendations
 
+
+
 ### 1. Review Technology Exposure
 
-Periodically review publicly observable technologies, CMS components, plugins and server information.
+**Periodically review publicly observable technologies, CMS components, plugins and server information**
+
+
 
 ### 2. Patch & Configuration Management
 
 Keep operating systems, CMS platforms, plugins and supporting services updated and aligned with current security advisories.
 
+
+
 ### 3. Review HTTP Headers
 
 Review HTTP response headers and minimize unnecessary technical disclosure while maintaining required application functionality.
+
+
 
 ### 4. DNS Hygiene
 
 Audit public DNS records regularly and remove obsolete or unnecessary records.
 
+
+
 ### 5. WAF Maintenance
 
 Keep the WAF appropriately configured, monitored and maintained.
+
+
 
 ### 6. Internal Asset Discovery
 
 Perform authorized periodic network discovery to maintain an accurate asset inventory.
 
+
+
 ### 7. Investigate Unknown Devices
 
 Unexpected hosts should be validated against the organization's approved asset inventory.
+
+
 
 ### 8. Network Documentation
 
 Maintain current network diagrams, addressing information and device ownership documentation.
 
+
+
 ### 9. Authorized Security Testing
 
+
+
 All deeper vulnerability validation must remain within an approved scope and documented authorization.
+
 
 ---
 
