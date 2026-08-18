@@ -8,8 +8,7 @@
  **Pentester:**  Kovilen Sookalingum  
  **Date:**  August 2026  
  **Program / Batch:**  B082 – Networkwalks  
- **GitHub:**  [Your GitHub Profile]  
-
+ 
 </div>
 
 ---
@@ -547,7 +546,7 @@ All deeper vulnerability validation must remain within an approved scope and doc
 **Kovilen Sookalingum**
 
 
-**GitHub:** `[Your GitHub Profile]`
+**GitHub:** `[https://github.com/GHOST-HUNTER10/cybersecurity-B082-week-02-penetration-testing-Report.git]`
 
 **Program:** B082 - Networkwalks
 
