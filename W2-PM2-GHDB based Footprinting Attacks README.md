@@ -265,6 +265,7 @@ The original findings were recorded during the practical exercise, while the pub
 
 # Evidence & Screenshots | Screenshot Privacy
 
+<img src="EVIDENCE/W2-PM2-01/s1.jpeg" alt="GHDB Search" width="600">
 
 
 
