@@ -5,9 +5,17 @@
 
 ### 🔴 Authorized Educational Security Assessment  
 
- **Pentester:**  Kovilen Sookalingum  
- **Date:**  August 2026  
- **Program / Batch:**  B082 – Networkwalks  
+**Pentester:**  Kovilen Sookalingum 
+
+**Date:**  August 2026
+
+**Status**: AUTHORIZED
+
+**Client/Target**:  Networkwalks (secured written permission already) **&** My own local LAN Network
+
+**Permission secured from client?**: yes
+
+**program / Batch:**  B082 – Networkwalks  
  
 </div>
 
