@@ -1,4 +1,4 @@
-# 🛡️ OSINT Reconnaissance Report — networkwalks.com
+#  OSINT Reconnaissance Report — networkwalks.com
 
 **theHarvester Email & Subdomain Enumeration**
 *Authorized Educational Security Assessment · Networkwalks Program B082*
@@ -31,13 +31,13 @@ Using **theHarvester**, a passive scan of `networkwalks.com` surfaced **1 public
 
 ---
 
-## 🎯 Why This Matters
+##  Why This Matters
 
 Reconnaissance is step one of almost every real-world attack chain. Before an attacker scans a single port, they usually build a picture from what's already public: staff emails, subdomains, leaked mentions in code repos, DNS metadata. theHarvester automates that first pass. Running it against your own (authorized) domain shows you exactly what that picture looks like from the outside.
 
 ---
 
-## 🧰 Tool Setup
+##  Tool Setup
 
 **Command:**
 ```bash
@@ -46,7 +46,7 @@ theHarvester -h
 
 Before scanning, the tool's availability and options were confirmed from the Kali application menu and terminal.
 
-📸 **Evidence:**
+ **Evidence:**
 `screenshots/h1.jpeg` — theHarvester located in the Kali app launcher
 `screenshots/h2.jpeg` — Version banner (v4.11.1) and usage/help output
 
@@ -55,14 +55,14 @@ Before scanning, the tool's availability and options were confirmed from the Kal
 
 ---
 
-## 🔍 The Scan
+##  The Scan
 
 **Command:**
 ```bash
 theHarvester -d networkwalks.com -b all
 ```
 
-📸 **Evidence:**
+ **Evidence:**
 `screenshots/h3.jpeg` — Full scan output
 
 ![Scan Results](screenshots/h3.jpeg)
@@ -89,7 +89,7 @@ theHarvester -d networkwalks.com -b all
 
 ---
 
-## 🚦 Findings at a Glance
+##  Findings at a Glance
 
 | Risk | Finding |
 |---|---|
@@ -100,7 +100,7 @@ theHarvester -d networkwalks.com -b all
 
 ---
 
-## ✅ Recommendations
+##  Recommendations
 
 - Put `cpanel.*` and `cpcalendars.*` behind IP allow-listing, a VPN, or at minimum enforce MFA on login.
 - Don't expose admin control panels to the open internet unless there's a clear business need.
@@ -111,7 +111,7 @@ theHarvester -d networkwalks.com -b all
 ---
 
 
-## 👤 Author
+##  Author
 
 **Kovilen Sookalingum**
 Program: B082 – Networkwalks · Week 02 · August 2026
