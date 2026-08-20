@@ -50,8 +50,8 @@ Before scanning, the tool's availability and options were confirmed from the Kal
 `screenshots/h1.jpeg` — theHarvester located in the Kali app launcher
 `screenshots/h2.jpeg` — Version banner (v4.11.1) and usage/help output
 
-![Tool Discovery](screenshots/h1.jpeg)
-![Help Menu](screenshots/h2.jpeg)
+<img src="EVIDENCE/W2-PM4/h1.jpeg" alt="Tool Discovery" width="700">
+<img src="EVIDENCE/W2-PM4/h2.jpeg" alt="Tool Discovery" width="700">
 
 ---
 
@@ -65,7 +65,7 @@ theHarvester -d networkwalks.com -b all
  **Evidence:**
 `screenshots/h3.jpeg` — Full scan output
 
-![Scan Results](screenshots/h3.jpeg)
+<img src="EVIDENCE/W2-PM4/h3.jpeg" alt="Tool Discovery" width="700">
 
 **What came back:**
 
