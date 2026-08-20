@@ -411,8 +411,6 @@ Populate this table from your actual Zenmap evidence.
 | 01 | `10.0.0.1` | `[52:54:00:12:35:80 (QEMU)]` | Gateway / Router
 | 02 | `[10.0.0.2]` | `[08:00:27:C8:86:A2 (VirtualBox)]` | Virtual Machine
 | 03 | `[10.0.0.4]` | `[08:04:A2 (VirtualBox)]` | Virtual Machine
-| 04 | `[10.0.0.5]` | `[Localhost]` | Tester workstation
-| 05 | `[192.232.216.135]` | `[HostGator,(Apache Server) ]` |External authorized target
 
 ---
 
