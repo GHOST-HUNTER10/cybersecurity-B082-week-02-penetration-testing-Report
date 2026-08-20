@@ -25,7 +25,7 @@
 
 ---
 
-## TL;DR
+# Executive Summary
 
 Using **theHarvester**, a passive scan of `networkwalks.com` surfaced **1 public email address** and **3 subdomains** through open-source search engines and code repositories — no active probing of the target's infrastructure was required. This kind of exposure is exactly what a real attacker would find first, before ever touching the target directly.
 
