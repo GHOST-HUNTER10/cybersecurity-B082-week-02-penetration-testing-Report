@@ -12,6 +12,22 @@
 
 ---
 
+# ⚠️ Disclaimer ⚠️
+
+>  **IMPORTANT — AUTHORIZED SECURITY TESTING ONLY**
+>
+> This penetration testing report was produced as part of an **educational cybersecurity and ethical hacking exercise**.  
+> All reconnaissance activities described here were performed in a controlled lab environment with explicit authorization.  
+>
+> The techniques demonstrated are intended **only for security education, defensive research, and authorized penetration testing**.  
+> They must **not** be used to gain unauthorized access, compromise accounts, harvest credentials, invade privacy, or attack third-party systems.  
+>
+> Any sensitive information discovered during the assessment has been **redacted** in this public GitHub version.  
+>
+> Unauthorized hacking is illegal. The author assumes **no responsibility** for misuse of the information presented.
+
+---
+
 ## 1. Executive Summary
 
 An Open Source Intelligence (OSINT) reconnaissance engagement was conducted against the target domain **`[networkwalks].com`** using **Maltego Community Edition (CE)** on **Kali Linux**. The objective was to passively gather publicly available information — WHOIS registration data, registrar details, associated email addresses, and related web infrastructure — without direct interaction with the target's servers.
