@@ -213,6 +213,14 @@ Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
 The Zenmap assessment of `networkwalks.com` revealed a host with multiple critical services exposed, including FTP, SSH, SMTP, HTTP/HTTPS, and MySQL. These findings represent significant attack vectors if left unprotected. Defensive measures should prioritize restricting access, patching services, and hardening configurations.
 
 ---
+---
+
+## 👤 Author Information
+
+**Name:** Kovilen Sookalingum  
+**Program:** B082 – Networkwalks  
+**Week:** 02  
+**Date:** August 2026  
 
 
 ---
