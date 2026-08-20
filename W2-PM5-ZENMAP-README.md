@@ -65,7 +65,7 @@ nmap -T4 -A -v networkwalks.com
 
 ###  Tool Launch — *Environment Setup*
 
-<img src="EVIDENCE/w2-pm5 z1.jpeg" alt="Zenmap Screenshot" width="800"/
+<img src="EVIDENCE/w2-pm5/z1.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Purpose:** Confirms the Zenmap application is available in the Kali Linux application menu, verifying the environment setup and tool availability.
 
@@ -73,7 +73,7 @@ nmap -T4 -A -v networkwalks.com
 
 ### Target Configuration — *Configuration*
 
-![Target Setup](screenshots/02-target-setup.jpeg)
+<img src="EVIDENCE/w2-pm5/z2.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Purpose:** Zenmap GUI configured with target `networkwalks.com`, scan profile set to **Intense Scan**.
 
@@ -86,7 +86,7 @@ nmap -T4 -A -v networkwalks.com
 
 ### Profile Selection
 
-![Profile Selection](screenshots/03-profile-selection.jpeg)
+<img src="EVIDENCE/w2-pm5/z3.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Purpose:** Demonstrates the available scan profile options (Ping Scan, Quick Scan, Intense Scan, Intense Scan + UDP, Slow Comprehensive Scan, etc.), showing scan configuration flexibility.
 
@@ -94,7 +94,7 @@ nmap -T4 -A -v networkwalks.com
 
 ### Ping Scan Results — *Host Discovery*
 
-![Ping Scan Results](screenshots/04-ping-scan.jpeg)
+<img src="EVIDENCE/w2-pm5/z4.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Command:** `nmap -sn networkwalks.com`
 
@@ -111,7 +111,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
 
 ### Quick Scan Results — *Port Enumeration*
 
-![Quick Scan Results](screenshots/05-quick-scan.jpeg)
+<img src="EVIDENCE/w2-pm5/z5.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Command:** `nmap -T4 -F networkwalks.com`
 
@@ -123,7 +123,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
 
 ### Intense Scan Results — *Service Fingerprinting*
 
-![Intense Scan Results](screenshots/06-intense-scan.jpeg)
+<img src="EVIDENCE/w2-pm5/z5.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Command:** `nmap -T4 -A -v networkwalks.com`
 
@@ -135,7 +135,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
 
 ### Topology Visualization — *Network Mapping*
 
-![Topology Map](screenshots/07-topology.jpeg)
+<img src="EVIDENCE/w2-pm5/z8.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Purpose:** The Zenmap Topology tab (with Legend enabled) visually confirms a direct traceroute connection between `localhost` and `networkwalks.com (192.232.216.135)`. The red node indicates a host with more than 6 open ports.
 
