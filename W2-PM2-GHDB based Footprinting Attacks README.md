@@ -1,20 +1,50 @@
-# 🔐 Cybersecurity B082 — Week 02
+# Cybersecurity B082 — Week 02
 
 ## Footprinting & Reconnaissance with Google Hacking Database (GHDB)
 
 <p align="center">
 
-**Cybersecurity & Ethical Hacking Project**
-
-**Week 02 — Project Module 2**
-
-**Footprinting & Reconnaissance**
-
-</p>
+**Cybersecurity & Ethical Hacking Project** | **Week 02 — Project Module 2** 
 
 ---
 
-## 📌 Project Overview
+#  Project Information
+
+**Course:** Cybersecurity B082
+
+**Module:** Week 02 — Project Module 2
+
+**Topic:** Footprinting & Reconnaissance with GHDB
+
+**Task:** Security Camera Reconnaissance
+
+**Project Type:** Educational Penetration Testing / Ethical Hacking
+
+**Documentation Platform:** GitHub
+
+---
+
+---
+
+# ⚠️ Disclaimer ⚠️
+
+> **Educational Use Only**
+>
+> This repository was created for cybersecurity education and ethical-hacking research.
+>
+> No unauthorized access, exploitation, password guessing, authentication bypass, modification, or collection of private information was performed.
+>
+> Any security testing must be conducted only against systems that you own, your own laboratory environment, or systems for which you have explicit written authorization.
+>
+> Unauthorized access to computer systems or networks may be illegal.
+>
+> The author does not encourage or support unauthorized access, surveillance, exploitation, or misuse of the techniques described in this project.
+
+---
+
+---
+
+##  Project Overview
 
 This repository documents my **Week 02 Cybersecurity Project**, focused on **Footprinting and Reconnaissance using the Google Hacking Database (GHDB)**.
 
@@ -26,7 +56,7 @@ The exercise demonstrates how search engines can index web interfaces and other 
 
 ---
 
-# 🎯 Project Objectives
+#  Project Objectives
 
 The objectives of this project were to:
 
@@ -40,7 +70,7 @@ The objectives of this project were to:
 
 ---
 
-# 🧰 Tools & Technologies
+# Tools & Technologies
 
 | Tool                               | Purpose                                   |
 | ---------------------------------- | ----------------------------------------- |
@@ -52,7 +82,7 @@ The objectives of this project were to:
 
 ---
 
-# 🧠 What is GHDB?
+#  What is GHDB?
 
 The **Google Hacking Database (GHDB)** is a collection of search queries designed to locate information that has already been indexed by search engines.
 
@@ -81,7 +111,7 @@ The Week 02 project material introduces GHDB as a reconnaissance resource for id
 
 ---
 
-# 🔎 Footprinting & Reconnaissance
+# Footprinting & Reconnaissance
 
 Footprinting is the process of collecting information about a target environment before performing further security testing.
 
@@ -97,7 +127,7 @@ In an ethical penetration test, reconnaissance should always remain within the a
 
 ---
 
-# ⚙️ Methodology
+# Methodology
 
 The methodology used for this project was:
 
@@ -155,7 +185,7 @@ No attempt was made to bypass authentication, guess passwords, exploit systems, 
 
 ---
 
-# 📷 Task 1 — Security Camera Reconnaissance
+# Task 1 — Security Camera Reconnaissance
 
 ## Objective
 
@@ -172,7 +202,7 @@ The exercise is intended to demonstrate reconnaissance through search engines.
 
 ---
 
-# 🔍 Google Dork Examples
+# Google Dork Examples
 
 The following types of queries were used during the reconnaissance exercise:
 
@@ -210,7 +240,7 @@ These queries demonstrate how search operators can be combined with application-
 
 ---
 
-# 📊 Task 1 Findings
+# Task 1 Findings
 
 For ethical public documentation, the identifying IP addresses of third-party camera systems are **redacted**.
 
@@ -218,7 +248,7 @@ The original findings were recorded during the practical exercise, while the pub
 
 | No. | Endpoint        | Relevant Dork                                        | Username / Password |
 | --: | --------------- | ---------------------------------------------------- | ------------------- |
-|   1 | `REDACTED:8080` | `intitle:"webcamXP" inurl:8080`                      | N/A                 |
+|   1 | `REDACTED:8080 ` | `intitle:"webcamXP" inurl:8080`                     | N/A                 |
 |   2 | `REDACTED:8080` | `intitle:"Webcam and IP cameras server for Windows"` | N/A                 |
 |   3 | `REDACTED:880`  | `intitle:"webcamXP 5"`                               | N/A                 |
 |   4 | `REDACTED:8080` | `intitle:"webcamXP 5"`                               | N/A                 |
@@ -233,7 +263,30 @@ The original findings were recorded during the practical exercise, while the pub
 
 ---
 
-# ⚠️ Finding Interpretation
+# Evidence & Screenshots | Screenshot Privacy
+
+
+
+
+
+
+Sensitive information should be blurred or cropped where appropriate.
+
+This includes:
+
+* Public IP addresses
+* Personal information
+* Private content
+* Credentials
+* Identifiable camera feeds
+
+The screenshots should demonstrate the **methodology and search process**, not expose unnecessary private information.
+
+---
+
+---
+
+# Finding Interpretation
 
 A search-engine result should not automatically be interpreted as proof that a device is vulnerable.
 
@@ -253,7 +306,7 @@ Further assessment would require explicit authorization from the system owner.
 
 ---
 
-# 🛡️ Defensive Security Recommendations
+# Defensive Security Recommendations
 
 Organizations operating Internet-connected cameras should consider the following security controls.
 
@@ -300,69 +353,6 @@ Unused services and Internet-facing interfaces should be disabled whenever possi
 ## 7. Monitor Search-Engine Exposure
 
 Organizations should periodically search their own domains and assets to determine what information is publicly indexed.
-
----
-
-# 📸 Evidence & Screenshots
-
-Screenshots for Task 1 will be stored in:
-
-```text
-screenshots/task-01/
-```
-
-The screenshots will be manually added to this repository.
-
-### Planned screenshots
-
-| Screenshot              | Purpose                      |
-| ----------------------- | ---------------------------- |
-| `01-ghdb-search.png`    | GHDB / camera-related search |
-| `02-google-results.png` | Google search results        |
-| `03-finding-01.png`     | Example finding              |
-| `04-finding-02.png`     | Example finding              |
-| `05-finding-03.png`     | Example finding              |
-| Additional screenshots  | Supporting findings          |
-
-### Screenshot Privacy
-
-Sensitive information should be blurred or cropped where appropriate.
-
-This includes:
-
-* Public IP addresses
-* Personal information
-* Private content
-* Credentials
-* Identifiable camera feeds
-
-The screenshots should demonstrate the **methodology and search process**, not expose unnecessary private information.
-
----
-
-# 🗂️ Repository Structure
-
-The project is organized as follows:
-
-```text
-cybersecurity-B082-week-02-penetration-testing-Report/
-│
-├── README.md
-│
-├── screenshots/
-│   │
-│   └── task-01/
-│       ├── 01-ghdb-search.png
-│       ├── 02-google-results.png
-│       ├── 03-finding-01.png
-│       ├── 04-finding-02.png
-│       ├── 05-finding-03.png
-│       └── ...
-│
-└── documentation/
-    │
-    └── ethical-scope.md
-```
 
 ---
 
@@ -477,41 +467,9 @@ The most important lesson from the exercise is that **security is not only about
 | Task 1 findings            | ✅ Documented       |
 | Ethical scope              | ✅ Documented       |
 | Security recommendations   | ✅ Completed        |
-| Task 1 screenshots         | 🔄 To be added     |
-| Screenshot redaction       | 🔄 To be completed |
 | GitHub documentation       | ✅ Completed        |
 
 ---
-
-# ⚠️ Disclaimer
-
-> **Educational Use Only**
->
-> This repository was created for cybersecurity education and ethical-hacking research.
->
-> No unauthorized access, exploitation, password guessing, authentication bypass, modification, or collection of private information was performed.
->
-> Any security testing must be conducted only against systems that you own, your own laboratory environment, or systems for which you have explicit written authorization.
->
-> Unauthorized access to computer systems or networks may be illegal.
->
-> The author does not encourage or support unauthorized access, surveillance, exploitation, or misuse of the techniques described in this project.
-
----
-
-# 👤 Project Information
-
-**Course:** Cybersecurity B082
-
-**Module:** Week 02 — Project Module 2
-
-**Topic:** Footprinting & Reconnaissance with GHDB
-
-**Task:** Security Camera Reconnaissance
-
-**Project Type:** Educational Penetration Testing / Ethical Hacking
-
-**Documentation Platform:** GitHub
 
 ---
 
@@ -527,9 +485,6 @@ The purpose of ethical hacking is not simply to discover weaknesses, but to **un
 
 ---
 
-<p align="center">
-
-### 🔐 Footprinting • Reconnaissance • GHDB • Ethical Hacking
 
 **Cybersecurity B082 — Week 02**
 
