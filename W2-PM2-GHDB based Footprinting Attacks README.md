@@ -1,28 +1,22 @@
-# Cybersecurity B082 — Week 02
+# <p align="center"> Penetration Testing Report</p>
+<p align="center">
+</p>
 
-## Footprinting & Reconnaissance with Google Hacking Database (GHDB)
+
+## GHDB-Based Footprinting & Reconnaissance
+### Professional Penetration Testing Report
 
 <p align="center">
 
-**Cybersecurity & Ethical Hacking Project** | **Week 02 — Project Module 2** 
+| | |
+|---|---|
+| **Assessment Type** | ✅ Authorized Security Assessment (Educational) |
+| **Pentester** | Kovilen Sookalingum |
+| **Date** | August 2026 |
+| **Module** | Week 02 — Project Module 2 (PM2) |
+| **Status** | 🟢 Complete |
 
----
-
-#  Project Information
-
-**Course:** Cybersecurity B082
-
-**Module:** Week 02 — Project Module 2
-
-**Topic:** Footprinting & Reconnaissance with GHDB
-
-**Task:** Security Camera Reconnaissance
-
-**Project Type:** Educational Penetration Testing / Ethical Hacking
-
-**Documentation Platform:** GitHub
-
----
+</p>
 
 ---
 
@@ -42,9 +36,7 @@
 
 ---
 
----
-
-##  Project Overview
+# <p align="center"> Assessment Scope</p>
 
 This repository documents my **Week 02 Cybersecurity Project**, focused on **Footprinting and Reconnaissance using the Google Hacking Database (GHDB)**.
 
@@ -56,7 +48,7 @@ The exercise demonstrates how search engines can index web interfaces and other 
 
 ---
 
-#  Project Objectives
+# <p align="center"> Executive Objectives</p>
 
 The objectives of this project were to:
 
@@ -84,6 +76,8 @@ The objectives of this project were to:
 
 #  What is GHDB?
 
+ <img src="EVIDENCE/W2-PM2-/s1.jpeg" alt="Screenshot 1" width="400"/>
+ 
 The **Google Hacking Database (GHDB)** is a collection of search queries designed to locate information that has already been indexed by search engines.
 
 These queries are commonly called **Google dorks**.
@@ -265,9 +259,25 @@ The original findings were recorded during the practical exercise, while the pub
 
 # Evidence & Screenshots | Screenshot Privacy
 
-<img src="EVIDENCE/W2-PM2-01/s1.jpeg" alt="GHDB Search" width="600">
+<p float="left">
+  <img src="EVIDENCE/W2-PM2-/s3.jpeg" alt="Screenshot 3" width="400"/>
+  <img src="EVIDENCE/W2-PM2-/s4.jpeg" alt="Screenshot 4" width="400"/>
+</p>
 
+<p float="left">
+  <img src="EVIDENCE/W2-PM2-/s5.jpeg" alt="Screenshot 5" width="400"/>
+  <img src="EVIDENCE/W2-PM2-/s6.jpeg" alt="Screenshot 6" width="400"/>
+</p>
 
+<p float="left">
+  <img src="EVIDENCE/W2-PM2-/s7.jpeg" alt="Screenshot 7" width="400"/>
+  <img src="EVIDENCE/W2-PM2-/s8.jpeg" alt="Screenshot 8" width="400"/>
+</p>
+
+<p float="left">
+  <img src="EVIDENCE/W2-PM2-/s9.jpeg" alt="Screenshot 9" width="400"/>
+  <img src="EVIDENCE/W2-PM2-/s2.jpeg" alt="Screenshot 2" width="400"/>      
+</p>
 
 
 
@@ -357,7 +367,73 @@ Organizations should periodically search their own domains and assets to determi
 
 ---
 
-# ⚖️ Ethical Scope
+# <p align="center"> Task 2 — Mathematics PDF Listings</p>
+
+<p align="center">
+  <strong>Objective:</strong> Identify 10 publicly indexed mathematics PDF directories using GHDB search queries.<br>
+  <strong>Assessment Type:</strong> Authorized Security Assessment (Educational)<br>
+  <strong>Pentester:</strong> Kovilen Sookalingum<br>
+  <strong>Assessment Date:</strong> August 2026<br>
+  <strong>Module:</strong> Week 02 — Project Module 2 (PM2)
+</p>
+
+---
+
+# <p align="center">Findings Table</p>
+
+| No. | Link | Relevant Dork | Username / Password |
+|----:|------|---------------|---------------------|
+| 1 | https://www.skylineuniversity.ac.ae/pdf/math/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 2 | https://archive.org/details | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 3 | https://www.free-ebooks.net/mathematics | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 4 | https://www.magmath.com/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 5 | https://www.gutenberg.org/ebooks/33283 | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 6 | https://infobooks.org/free-pdf-books/math/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 7 | https://carma.newcastle.edu.au/brailey/Lecture_Notes/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 8 | https://www.cuteboyprogrammers.com/pdf/Math/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 9 | https://www.homeschoolmath.net/teaching/pdfs/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 10 | https://ocw.mit.edu/courses/mathematics/ | `intitle:index.of "parent directory" mathematics pdf` | --- |
+
+---
+
+# <p align="center"> Lessons Learned — Task 2</p>
+
+### 1. Search engines index more than expected  
+Even academic and educational repositories can be discovered through simple Google dorks. Organizations should be aware that their directory structures and file listings may be publicly visible.
+
+### 2. GHDB queries reveal open resources  
+The same dorks used by attackers to find sensitive files can also surface legitimate educational materials. This demonstrates the dual‑use nature of reconnaissance techniques.
+
+### 3. Discovery ≠ exploitation  
+Finding a directory listing does not mean exploitation has occurred. The exercise was limited to reconnaissance and documentation, without downloading or misusing any files.
+
+### 4. Importance of directory configuration  
+Open “index of” listings may unintentionally expose internal file structures. Administrators should configure web servers to disable auto‑indexing unless explicitly required.
+
+### 5. Defensive monitoring  
+Security teams can use GHDB queries against their own domains to identify unintended exposure of documents, lecture notes, or internal resources.
+
+### 6. Ethical boundaries  
+Reconnaissance should remain within authorized scope. In this project, only publicly available educational repositories were documented, with no attempt to access private or copyrighted material.
+
+---
+
+<p align="center">
+  <strong>Conclusion:</strong> Task 2 reinforced that reconnaissance is not only about finding vulnerable devices, but also about understanding how ordinary search queries can reveal open educational resources. Organizations should balance accessibility with security by controlling what directories are indexed by search engines.
+</p>
+
+# <p align="center">Notes</p>
+
+<p align="center">
+  All links point to publicly available educational repositories.<br>
+  No copyrighted or private materials were downloaded or redistributed.<br>
+  This exercise demonstrates how Google indexing can surface open resources and why organizations should configure directories securely.
+</p>
+
+---
+
+
+#  Ethical Scope
 
 This project was conducted strictly for **educational and ethical-security research purposes**.
 
@@ -396,7 +472,7 @@ If a security researcher discovers an exposed service during authorized research
 
 ---
 
-# 🔐 Security Risk Summary
+#  Security Risk Summary
 
 | Risk                      | Description                                    | Recommended Control          |
 | ------------------------- | ---------------------------------------------- | ---------------------------- |
@@ -409,7 +485,7 @@ If a security researcher discovers an exposed service during authorized research
 
 ---
 
-# 🧠 Lessons Learned
+#  Lessons Learned
 
 This project provided practical experience with search-engine-based reconnaissance.
 
@@ -437,7 +513,7 @@ Security teams can perform controlled searches against their own assets to ident
 
 ---
 
-# 📚 Project Reflection
+#  Project Reflection
 
 This exercise demonstrated the importance of reconnaissance during penetration testing.
 
@@ -460,12 +536,13 @@ The most important lesson from the exercise is that **security is not only about
 
 # ✅ Project Completion
 
-| Project Component          | Status             |
-| -------------------------- | ------------------ |
+| Project Component          | Status              |
+| -------------------------- | ------------------- |
 | GHDB research              | ✅ Completed        |
 | Reconnaissance methodology | ✅ Completed        |
 | Camera-related dorks       | ✅ Documented       |
 | Task 1 findings            | ✅ Documented       |
+| Task 2 findings            | ✅ Documented       |
 | Ethical scope              | ✅ Documented       |
 | Security recommendations   | ✅ Completed        |
 | GitHub documentation       | ✅ Completed        |
@@ -474,7 +551,7 @@ The most important lesson from the exercise is that **security is not only about
 
 ---
 
-# 🏁 Conclusion
+#  Conclusion
 
 The Week 02 GHDB project demonstrated how search engines can be used as a reconnaissance source during security assessments.
 
@@ -487,6 +564,15 @@ The purpose of ethical hacking is not simply to discover weaknesses, but to **un
 ---
 
 
-**Cybersecurity B082 — Week 02**
+---
+
+# <p align="center">Report Author</p>
+
+<p align="center">
+This report was prepared and documented by <b>Kovilen Sookalingum</b>  
+for <i>Cybersecurity B082 — Week 02, Project Module 2</i>.  
+All findings are presented for educational and ethical‑hacking purposes only.
+</p>
+
 
 </p>
