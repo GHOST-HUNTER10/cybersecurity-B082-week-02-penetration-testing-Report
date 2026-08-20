@@ -65,7 +65,7 @@ nmap -T4 -A -v networkwalks.com
 
 ###  Tool Launch — *Environment Setup*
 
-<img src="screenshots/01-tool-launch.jpeg" alt="Zenmap Tool Launch" width="800"/>
+<img src="EVIDENCE/w2-pm5 z1.jpeg" alt="Zenmap Screenshot" width="800"/
 
 **Purpose:** Confirms the Zenmap application is available in the Kali Linux application menu, verifying the environment setup and tool availability.
 
