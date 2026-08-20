@@ -48,8 +48,8 @@ An Open Source Intelligence (OSINT) reconnaissance engagement was conducted agai
 - Verified launch with splash screen  
 
 # Evidence:  
-![Maltego Startup](screenshots/01-maltego-startup.png)  
-![Installation Logs](screenshots/02-installation-logs.png)
+<img src="EVIDENCE/w2-pm3-/m11.jpeg" alt="Maltego Startup" width="400"/> 
+<img src="EVIDENCE/w2-pm3-/m1.jpeg" alt="Maltego Startup" width="400"/> 
 
 ---
 
@@ -57,8 +57,8 @@ An Open Source Intelligence (OSINT) reconnaissance engagement was conducted agai
 - Created new blank graph  
 - Verified entity palette availability  
 
-📸 Evidence:  
-![Domain Entity](screenshots/03-domain-entity.png)
+ Evidence:  
+<img src="EVIDENCE/w2-pm3-/m2.jpeg" alt="Maltego Startup" width="400"/> 
 
 ---
 
@@ -66,8 +66,8 @@ An Open Source Intelligence (OSINT) reconnaissance engagement was conducted agai
 - Added **Domain** entity  
 - Configured value: `[REDACTED].com`  
 
-📸 Evidence:  
-![Target Domain](screenshots/04-target-domain.png)
+ Evidence:  
+<img src="EVIDENCE/w2-pm3-/m22.jpeg" alt="Maltego Startup" width="400"/> 
 
 ---
 
@@ -77,9 +77,7 @@ An Open Source Intelligence (OSINT) reconnaissance engagement was conducted agai
 - Search Engine → Found related “Contact Us” page  
 
 📸 Evidence:  
-![WHOIS Result](screenshots/05-abuse-godaddy.png)  
-![Email Discovery](screenshots/06-info-email-discovery.png)
-
+<img src="EVIDENCE/w2-pm3-/m222.jpeg" alt="Maltego Startup" width="400"/> 
 ---
 
 ## 4. Findings
@@ -127,19 +125,6 @@ An Open Source Intelligence (OSINT) reconnaissance engagement was conducted agai
 3. **Segregate Public vs Internal Email** (F-002)  
 4. **Periodic OSINT Audits** (All)  
 5. **Audit Public-Facing Content** (F-003)  
-
----
-
-## 7. Evidence Log
-
-| Evidence ID | Screenshot | Description |
-|-------------|------------|-------------|
-| E-001 | `01-maltego-startup.png` | Maltego CE splash screen |
-| E-002 | `02-installation-logs.png` | Terminal installation logs |
-| E-003 | `03-domain-entity.png` | Domain entity added |
-| E-004 | `04-target-domain.png` | Target domain configured |
-| E-005 | `05-abuse-godaddy.png` | WHOIS transform result |
-| E-006 | `06-info-email-discovery.png` | Email discovery via PGP/Search Engine |
 
 ---
 
