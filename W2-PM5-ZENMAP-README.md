@@ -86,7 +86,7 @@ nmap -T4 -A -v networkwalks.com
 
 ### Profile Selection
 
-<img src="EVIDENCE/w2-pm5/z3.jpeg" alt="Zenmap Tool Launch" width="800"/>
+<img src="EVIDENCE/w2-pm5/z3jpeg.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Purpose:** Demonstrates the available scan profile options (Ping Scan, Quick Scan, Intense Scan, Intense Scan + UDP, Slow Comprehensive Scan, etc.), showing scan configuration flexibility.
 
@@ -123,7 +123,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
 
 ### Intense Scan Results — *Service Fingerprinting*
 
-<img src="EVIDENCE/w2-pm5/z5.jpeg" alt="Zenmap Tool Launch" width="800"/>
+<img src="EVIDENCE/w2-pm5/z6.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Command:** `nmap -T4 -A -v networkwalks.com`
 
@@ -135,7 +135,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
 
 ### Topology Visualization — *Network Mapping*
 
-<img src="EVIDENCE/w2-pm5/z8.jpeg" alt="Zenmap Tool Launch" width="800"/>
+<img src="EVIDENCE/w2-pm5/z7.jpeg" alt="Zenmap Tool Launch" width="800"/>
 
 **Purpose:** The Zenmap Topology tab (with Legend enabled) visually confirms a direct traceroute connection between `localhost` and `networkwalks.com (192.232.216.135)`. The red node indicates a host with more than 6 open ports.
 
